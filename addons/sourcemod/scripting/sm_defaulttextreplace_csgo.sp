@@ -1,7 +1,7 @@
 #define PLUGIN_VERSION "1.0"
 public Plugin:myinfo =
 {
-    name = "NewVision Chat Tag",
+    name = "SM Chat Tag Replacer",
     author = "",
     description = "",
     version = PLUGIN_VERSION,
