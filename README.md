@@ -12,7 +12,7 @@ This plugin pack is made for running a moderated Wingman matches on private serv
  + Your folder should look like this 
  <br><img src=https://img.shibe.host/HAZU2/HAmudIho41.png/raw>
  + Now clone this repository
- + Now all the files that are left from sourcemod scripting to the repository's scripting folder.
+ + Now copy all the files that are left from sourcemod scripting to the repository's scripting folder.
  <br><img src=https://img.shibe.host/HAZU2/jEBeLate07.png/raw width=550 height=350>
  + Replace all existing files to update sourcemods core includes.
  + Select all .sp files and drag them in compile.exe
