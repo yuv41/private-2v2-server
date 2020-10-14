@@ -1,0 +1,47 @@
+// DO NOT MODIFY THIS FILE
+// 
+// To customize your server, see gamemodes_server.txt.example
+
+
+"GameModes.txt"
+{
+    "gameTypes"
+    {
+        "classic"
+        {
+            "gameModes"
+            {
+                "wingman"
+                {
+                    "mapgroupsMP"
+                    {
+                        "my_custom_group" ""
+                    }
+                }
+            }
+        }
+    }
+
+    "mapgroups"
+    {
+        "wingman"
+        {
+            "maps"
+            {
+                "de_lake"            ""
+                "de_inferno"            ""
+                "de_overpass"            ""
+				"de_train" ""
+				"de_vertigo" ""
+				"de_cbble" ""
+				"gd_rialto" ""
+				"de_shortnuke" ""
+				"de_shortdust" ""
+                "de_stmarc" ""
+                "de_bank" ""
+                "de_safehouse" ""
+            }
+        }
+    }
+}
+

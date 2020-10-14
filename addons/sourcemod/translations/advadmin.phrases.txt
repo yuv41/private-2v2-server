@@ -1,0 +1,336 @@
+//Translation file for "advadmin" plugin.
+//This translation supports only "1.7.2 BETA" version of the plugin.
+//Update this file with every update, or you will may get errors into your console.
+
+"Phrases"
+{
+	//-----CONNECT-----//	
+	"Player_Connected"
+	{
+		"#format"	"{1:N}"
+		"en"		"{green}[NewVision]{default} {1} connected"
+	}
+	"Player_Connected_From"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{green}[NewVision]{default} {1} connected ({2})"
+	}
+	
+	//-----OTHER-----//
+	"CMD_OnlyInTeam"
+	{
+		"en"		"{green}[NewVision]{default} You can use only if the target client is in team!"
+	}
+	
+	"CMD_Invalid_Weapon"
+	{
+		"en"		"{green}[NewVision]{default} The target weapon is invalid, but the thing is given. Type sm_equipments in console to see valid weapons."
+	}
+	
+	"CMD_Invalid_Team"
+	{
+		"en"		"{green}[NewVision]{default} The target team is invalid!"
+	}
+	
+	//-----ADMINS-----//
+	"CMD_Admins_Online"
+	{
+		"#format"	"{1:s}"
+		"en"		"{green}[NewVision]{default} Online Admins: {1}"
+	}
+	"CMD_Admins_Offline"
+	{
+		"en"		"{green}[NewVision]{default} No admins online."
+	}
+	"CMD_Disabled"
+	{
+		"en"		"{green}[NewVision]{default} This command is disabled."
+	}
+	
+	//-----EXTEND-----//
+	"CMD_Extend_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_extend <map | round> <[+/-] minutes>"
+	}
+	
+	"CMD_ExtendMap"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[NewVision]{default} Map extended for {1} minutes."
+	}
+	"CMD_ExtendRound"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[NewVision]{default} Round extended for {1} seconds."
+	}
+	
+	//-----CLEARMAP-----//
+	"CMD_ClearMap"
+	{
+		"en"		"{green}[NewVision]{default} The map has been cleared."
+	}
+	//-----RESTARTGAME-----//
+	"CMD_RestartGame"
+	{
+		"en"		"{green}[NewVision]{default} Restarting the game."
+	}
+	//-----RESTARTROUND-----//
+	"CMD_RestartRound"
+	{
+		"en"		"{green}[NewVision]{default} Restarting the round."
+	}
+	
+	//-----EQUIPMENTS-----//
+	"CMD_Equipments_Weapons"
+	{
+		"#format"	"{1:s}"
+		"en"		"{green}[NewVision]{default} Valid weapon names: {1}"
+	}
+	"CMD_Equipments_Items"
+	{
+		"#format"	"{1:s}"
+		"en"		"{green}[NewVision]{default} Valid item names: {1}"
+	}
+	"CMD_Equipments_Printed"
+	{
+		"en"		"{green}[NewVision]{default} Valid weapon and item names printed into your console!"
+	}
+	//-----PLAYSOUND-----//
+	"CMD_PlaySound_Usage"
+	{
+		"en"			"{green}[NewVision]{default} Usage: sm_playsound <target> <sound [directories/filename.extension]> <pitch 100[50 - 250]> <volume 100[1 - 100]> <multiplier 1[1 - 10]>"
+	}
+	"CMD_PlaySound_NoFile"
+	{
+		"#format"		"{1:s}"
+		"en"			"{green}[NewVision]{default} Soundfile is not found: {1}"
+	}
+	"CMD_PlaySound"
+	{
+		"#format"		"{1:t},{2:s},{3:i},{4:i},{5:i}"
+		"en"			"{green}[NewVision]{default} Played a sound for: {1}, sound: {2}, pitch: {3}, volume: {4}, multiply: {5}"
+	}
+	
+	//-----TELEPORT-----//
+	"CMD_Teleport_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_teleport <target 1> <leave blank to saved location | @blink to aim pos | target 2>"
+	}
+	"CMD_Teleport_To_Blink"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} teleported to your aim position."
+	}
+	"CMD_Teleport_To_Player"
+	{
+		"#format"	"{1:t},{2:N}"
+		"en"		"{green}[NewVision]{default} {1} teleported to {2}"
+	}
+	"CMD_Teleport_NoSaved"
+	{
+		"en"		"{green}[NewVision]{default} You not have saved location!"
+	}
+	"CMD_Teleport_To_Saved"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} teleported to saved location."
+	}
+	//-----SAVELOC-----//
+	"CMD_SaveVec"
+	{
+		"en"		"{green}[NewVision]{default} Your current location saved."
+	}
+	
+	//-----TEAM-----//
+	"CMD_Team_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_team <target> <[1-3] | SPEC | SPECTATOR | T | CT> <[0/1] now/next round>"
+	}
+	"CMD_Team_Spec"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} moved to team: Spectators"
+	}
+	"CMD_Team_T"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} moved to team: Terrorists"
+	}
+	"CMD_Team_CT"
+	{
+		"#format"	"{1:t}"
+		"en"		"{1} moved to team: Counter-Terrorists"
+	}
+	//-----SWAP-----//
+	"CMD_Swap_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_swap <target> <[0/1] now/next round>"
+	}
+	"CMD_Swap"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} has been swapped"
+	}
+	//-----SPEC-----//
+	"CMD_Team_Spec_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_spec <target> <[0/1] now/next round>"
+	}
+	//-----SCRAMBLE-----//
+	"CMD_Scramble"
+	{
+		"en"		"{green}[NewVision]{default} Teams has been scrambled by skills."
+	}
+	
+	//-----GIVE-----//
+	"CMD_Give_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_give <target> <leave blank for knife | weaponname | text>"
+	}
+	"CMD_Give"
+	{
+		"#format"	"{1:t},{2:s}"
+		"en"		"{green}[NewVision]{default} {1} got this: {2}"
+	}
+	//-----EQUIP-----//
+	"CMD_Equip_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_equip <target> <leave blank for knife | weaponname | text>"
+	}
+	"CMD_Equip"
+	{
+		"#format"	"{1:t},{2:s}"
+		"en"		"{1} equipped this: {2}"
+	}
+	//-----DISARM-----//
+	"CMD_Disarm_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_disarm <target>"
+	}
+	"CMD_Disarm"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} disarmed"
+	}
+	
+	//-----RESPAWN-----//
+	"CMD_Respawn_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_respawn <target> <[0/1] on spawn/on death pos>"
+	}
+	"CMD_Respawn"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} respawned"
+	}
+	
+	//-----BURY-----//
+	"CMD_Bury_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_bury <target> <[0/1] bury/unbury>"
+	}
+	"CMD_Bury"
+	{
+		"#format"	"{1:t}"
+		"en"		"{green}[NewVision]{default} {1} buried"
+	}
+	
+	//-----SPEED-----//
+	"CMD_Speed_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_speed <target> <multipiler [0-500]>"
+	}
+	"CMD_Speed"
+	{
+		"#format"	"{1:t},{2:s}"
+		"en"		"{green}[NewVision]{default} {1}'s speed set to: {2}"
+	}
+	//-----GOD-----//
+	"CMD_God_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_god <target> <[0/1] off/on>"
+	}
+	"CMD_God"
+	{
+		"#format"	"{1:t},{2:i}"
+		"en"		"{green}[NewVision]{default} {1}'s godmode set to: {2}"
+	}
+	//-----HELMET-----//
+	"CMD_Helmet_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_helmet <target> <[0/1] off/on>"
+	}
+	"CMD_Helmet"
+	{
+		"#format"	"{1:t},{2:i}"
+		"en"		"{green}[NewVision]{default} {1}'s helmet set to: {2}"
+	}
+	
+	//-----HEALTH-----//
+	"CMD_Health_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_hp <target> <[+/-] amount>"
+	}
+	"CMD_Health"
+	{
+		"#format"	"{1:t},{2:i}"
+		"en"		"{green}[NewVision]{default} {1}'s health set to: {2}"
+	}
+	//-----ARMOR-----//
+	"CMD_Armor_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_armor <target> <[+/-] amount>"
+	}
+	"CMD_Armor"
+	{
+		"#format"	"{1:t},{2:i}"
+		"en"		"{green}[NewVision]{default} {1}'s armor set to: {2}"
+	}
+	//-----CASH-----//
+	"CMD_Cash_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_cash <target> <[+/-] amount>"
+	}
+	"CMD_Cash"
+	{
+		"#format"	"{1:t},{2:i}"
+		"en"		"{green}[NewVision]{default}{1}'s cash set to: ${2}"
+	}
+	
+	//-----SETSTATS-----//
+	"CMD_SetStats_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_setstats <target> <kills | assists | deaths | mvps | scores | clan> <[+/-] value>"
+	}
+	"CMD_SetStats"
+	{
+		"#format"	"{1:t},{2:s},{3:s}"
+		"en"		"{1}'s {2} stat modified to: {3}"
+	}
+	//-----TEAMSCORES-----//
+	"CMD_TeamScores_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_teamscores <[2/3] | T | CT> <[+/-] amount>"
+	}
+	"CMD_TeamScores_T"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[NewVision]{default} Terrorists scores set to: {1}"
+	}
+	"CMD_TeamScores_CT"
+	{
+		"#format"	"{1:i}"
+		"en"		"{green}[NewVision]{default} Counter-Terrorists scores set to: {1}"
+	}
+	
+	//-----SPAWNENT-----//
+	"CMD_SpawnEnt_Usage"
+	{
+		"en"		"{green}[NewVision]{default} Usage: sm_spawnent <chicken | ball | snow> <[0-5] body> <[-1-9999] explode>"
+	}
+	"CMD_SpawnEnt"
+	{
+		"#format"	"{1:s}"
+		"en"		"{green}[NewVision]{default} Entity {1} spawned."
+	}
+}

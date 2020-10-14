@@ -1,0 +1,90 @@
+﻿//**********************************************  Valid Colors	***********************************************
+
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}  *
+
+//*************************************************************************************************************
+
+
+
+"Phrases"
+
+{
+
+/******************* PLUGIN: AFK MANAGER *******************/	
+	"Move_Warning"
+	{
+		"#format"	"{1:i}"
+		"en"		"[{GREEN}NewVision{NORMAL}] Warning: If you do not move in {RED}{1}{NORMAL} seconds, you will be moved to spectate."
+		"de"		"[{GREEN}NewVision{NORMAL}] Warnung: Wenn du dich nicht in {RED}{1}{NORMAL} Sekunden bewegst, wirst du in den Zuschauermodus versetzt."
+		"da"		"[{GREEN}NewVision{NORMAL}] Advarsel: Hvis ikke du bevæger dig inden {RED}{1}{NORMAL} sekunder, vil du blive gjort til tilskuer."
+		"fr"		"[{GREEN}NewVision{NORMAL}] Attention: Si vous ne bougez pas dans les {RED}{1}{NORMAL} prochaines secondes, vous deviendrez spectateur."
+		"pl"		"[{GREEN}NewVision{NORMAL}] Uwaga: Jeżeli się nie poruszysz w ciągu {RED}{1}{NORMAL} sekund(y), zostaniesz przeniesiony do obserwatorów."
+		"hu"		"[{GREEN}NewVision{NORMAL}] Figyelem: Ha nem mozdulsz meg {RED}{1}{NORMAL} másodpercen belül, akkor át leszel helyezve nézőnek!"
+		"ru"		"[{GREEN}NewVision{NORMAL}] ВНИМАНИЕ: Начните двигаться, или через {RED}{1}{NORMAL} сек. отправитесь в наблюдатели."
+		"es"		"[{GREEN}NewVision{NORMAL}] Advertencia: Si usted no se mueve en {RED}{1}{NORMAL} segundos, usted será movido a espectador."
+		"pt"		"[{GREEN}NewVision{NORMAL}] PERIGO: se voce nao se mover em {RED}{1}{NORMAL} segundos, voce sera movido para espectador."
+		"tr"		"[{GREEN}NewVision{NORMAL}] Dikkat: {RED}{1}{NORMAL} saniye içinde hareket etmezseniz izleyicilere atılacaksınız."
+	}
+
+	"Kick_Warning"
+	{
+		"#format"	"{1:i}"
+		"en"		"[{GREEN}NewVision{NORMAL}] Warning: If you do not move in {RED}{1}{NORMAL} seconds, you will be kicked."
+		"de"		"[{GREEN}NewVision{NORMAL}] Warnung: Wenn du dich nicht in {RED}{1}{NORMAL} Sekunden bewegst, wirst du vom Server entfernt."
+		"da"		"[{GREEN}NewVision{NORMAL}] Advarsel: Hvis ikke du bevæger dig inden {RED}{1}{NORMAL} sekunder, vil du blive fjernet fra serveren."
+		"fr"		"[{GREEN}NewVision{NORMAL}] Attention: Si vous ne bougez pas dans les {RED}{1}{NORMAL} prochaines secondes, vous serez kické."
+		"pl"		"[{GREEN}NewVision{NORMAL}] Uwaga: Jeżeli się nie poruszysz w ciągu {RED}{1}{NORMAL} sekund(y), zostaniesz wykopany z serwera."
+		"hu"		"[{GREEN}NewVision{NORMAL}] Figyelem: Ha nem mozdulsz meg {RED}{1}{NORMAL} másodpercen belül, akkor ki leszel dobva NewVision miatt!"
+		"ru"		"[{GREEN}NewVision{NORMAL}] ВНИМАНИЕ: Начните двигаться, или через {RED}{1}{NORMAL} сек. будете отключены от сервера."
+		"es"		"[{GREEN}NewVision{NORMAL}] Advertencia: Si usted no se mueve en {RED}{1}{NORMAL} segundos, usted será expulsado."
+		"pt"		"[{GREEN}NewVision{NORMAL}] PERIGO: Se voce nao se mover em {RED}{1}{NORMAL} segundos, voce sera kickado."
+		"tr"		"[{GREEN}NewVision{NORMAL}] Dikkat: {RED}{1}{NORMAL} saniye içinde ayrılmazsanız oyundan atılacaksınız."
+	}
+
+	"Move_Announce"
+	{
+		"#format"	"{1:s}"
+		"en"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} was moved to spectate for being NewVision too long."
+		"de"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} wurde in den Zuschauermodus versetzt, weil er zu lange in Abwesehenheit war."
+		"da"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} blev gjort til tilskuer for at være NewVision for længe."
+		"fr"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} est devenu spectateur pour avoir été NewVision trop longtemps."
+		"pl"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} został przeniesiony do obserwatorów ponieważ za długo pozostawał bez ruchu."
+		"hu"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} át lett helyezve nézőnek NewVision miatt."
+		"ru"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} был перемещен в наблюдатели из-за длительного бездействия."
+		"es"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} fue movido a espectador por estar NewVision."
+		"pt"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} Foi movido para spectador por ficar NewVision."
+		"tr"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} uzun süre NewVision olduğu için izleyicilere atıldı."
+	}
+
+	"Kick_Announce"
+	{
+		"#format"	"{1:s}"
+		"en"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} was kicked for being AFK too long."
+		"de"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} wurde entfernt, weil er zu lange in Abwesenheit war."
+		"da"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} blev fjernet fra serveren for at være AFK for længe."
+		"fr"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} a été kické pour avoir été AFK trop longtemps."
+		"pl"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} został wykopany ponieważ za długo pozostawał bez ruchu."
+		"hu"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} ki lett dobva AFK miatt."
+		"ru"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} был отключен от сервера из-за длительного бездействия."
+		"es"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} fue expulsado por estar AFK."
+		"pt"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} foi kickado por ficar AFK."
+		"tr"		"[{GREEN}NewVision{NORMAL}] {PINK}{1}{NORMAL} uzun süre AFK olduğu için oyundan atıldı."
+	}
+
+	"Kick_Message"
+	{
+		"en"		"You were kicked for being AFK too long."
+		"de"		"Du wurdest vom Server entfernt, weil du zu lange in Abwesenheit warst."
+		"da"		"Du blev fjernet fra serveren fordi du var AFK for længe."
+		"fr"		"Vous avez été kické pour avoir été AFK trop longtemps."
+		"pl"		"Zostałeś wykopany ponieważ za długo pozostawałeś bez ruchu."
+		"hu"		"Ki lettél dobva AFK miatt."
+		"ru"		"Вы слишком долго бездействовали!"
+		"es"		"Usted fue expulsado por estar demasiado tiempo AFK (Lejos del teclado)."
+		"pt"		"Voce foi kickado por ficar AFK."
+		"tr"		"Uzun süre AFK olduğunuz için oyundan atıldınız."
+	}
+/******************* PLUGIN: AFK MANAGER *******************/	
+
+}
+

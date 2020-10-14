@@ -1,0 +1,18 @@
+//
+// Use the following characters to implement colors into the phrase(s):
+//    - \x01 - Default color
+//    - \x03 - Light Green *
+//    - \x04 - Green *
+//    - \x05 - Dark Green *
+//
+// * Color based on TF2 - it might be different in another mod (do some testing).
+//
+
+"Phrases"
+{
+	"Rage Quitter"
+	{
+		"#format"		"{1:N}"
+		"en"			"{green}[NewVision]{default} {1} has left in {darkred}rage{default}, but there's no one here to care about it."
+	}
+}
