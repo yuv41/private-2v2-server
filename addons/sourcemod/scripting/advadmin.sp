@@ -8,7 +8,7 @@
 
 public Plugin: myinfo =
 {
-	name = "[CSGO] Advanced Admin",
+	name = "[CSGO] Advanced Admin [Removed god]",
 	author = "PeEzZ",
 	description = "Advanced commands for admins.",
 	version = "1.7.2 BETA",
@@ -89,7 +89,6 @@ public OnPluginStart()
 	RegAdminCmd("sm_bury",			CMD_Bury,			ADMFLAG_KICK,		"Burying the targets");
 	//-----//
 	RegAdminCmd("sm_speed",			CMD_Speed,			ADMFLAG_BAN,		"Set the speed multipiler of the targets");
-	RegAdminCmd("sm_god",			CMD_God,			ADMFLAG_BAN,		"Set godmode for the targets");
 	RegAdminCmd("sm_helmet",		CMD_Helmet,			ADMFLAG_KICK,		"Set helmet for the targets");
 	//-----//
 	RegAdminCmd("sm_hp",			CMD_Health,			ADMFLAG_KICK,		"Set the health for the targets");
@@ -1252,58 +1251,6 @@ public Action: CMD_Speed(client, args)
 	{
 		ShowActivity2(client, CMD_PREFIX, "%t", "CMD_Speed", "_s", target_name, buffer);
 		LogActionEx(client, "%t", "CMD_Speed", "_s", target_name, buffer);
-	}
-	return Plugin_Handled;
-}
-public Action: CMD_God(client, args)
-{
-	if(!IsClientValid(client) || !IsClientInGame(client))
-	{
-		return Plugin_Handled;
-	}
-	
-	if(args != 2)
-	{
-		ReplyToCommand(client, "%t", "CMD_God_Usage");
-		return Plugin_Handled;
-	}
-	
-	new String: target_name[MAX_TARGET_LENGTH],
-		String: buffer[64],
-		target_list[MAXPLAYERS],
-		bool: tn_is_ml,
-		target_count;
-	
-	GetCmdArg(1, buffer, sizeof(buffer));
-	if((target_count = ProcessTargetString(buffer, client, target_list, MAXPLAYERS, COMMAND_FILTER_ALIVE, target_name, sizeof(target_name), tn_is_ml)) <= 0)
-	{
-		ReplyToTargetError(client, target_count);
-		return Plugin_Handled;
-	}
-	
-	GetCmdArg(2, buffer, sizeof(buffer));
-	new value = StringToInt(buffer);
-	
-	if((value != 0) && (value != 1))
-	{
-		ReplyToCommand(client, "%t", "CMD_God_Usage");
-		return Plugin_Handled;
-	}
-	
-	for(new i = 0; i < target_count; i++)
-	{
-		SetEntProp(target_list[i], Prop_Data, "m_takedamage", value ? 0 : 2);
-	}
-	
-	if(tn_is_ml)
-	{
-		ShowActivity2(client, CMD_PREFIX, "%t", "CMD_God", target_name, value);
-		LogActionEx(client, "%t", "CMD_God", target_name, value);
-	}
-	else
-	{
-		ShowActivity2(client, CMD_PREFIX, "%t", "CMD_God", "_s", target_name, value);
-		LogActionEx(client, "%t", "CMD_God", "_s", target_name, value);
 	}
 	return Plugin_Handled;
 }
