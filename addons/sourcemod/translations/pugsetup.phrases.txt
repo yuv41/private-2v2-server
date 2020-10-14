@@ -26,15 +26,15 @@
 	}
 	"VetoMessage"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} The map veto process will begin in a few seconds."
+		"en"		"{GREEN}[PugSetup]{NORMAL} The map veto process will begin in a few seconds."
 	}
 	"VoteMessage"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} The map voting will begin in a few seconds."
+		"en"		"{GREEN}[PugSetup]{NORMAL} The map voting will begin in a few seconds."
 	}
 	"AlreadyLive"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} The game is already live!"
+		"en"		"{GREEN}[PugSetup]{NORMAL} The game is already live!"
 	}
 	"ReadyStatusPlayers"
 	{
@@ -69,7 +69,7 @@
 	}
 	"ReadyStatusAllReadyVote"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} Starting map voting..."
+		"en"		"{GREEN}[PugSetup]{NORMAL} Starting map voting..."
 	}
 	"CaptainNotSelected"
 	{
@@ -83,11 +83,11 @@
 	"ReadyCommandHint"
 	{
 		"#format"		"{1:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} You still need to ready up by typing {GREEN}{1}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} You still need to ready up by typing {GREEN}{1}"
 	}
 	"NoPermission"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} You don't have permission to do that."
+		"en"		"{GREEN}[PugSetup]{NORMAL} You don't have permission to do that."
 	}
 	"NotUsingCaptains"
 	{
@@ -95,37 +95,37 @@
 	}
 	"Scrambling"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} {GREEN}Scrambling the teams!"
+		"en"		"{GREEN}[PugSetup]{NORMAL} {GREEN}Scrambling the teams!"
 	}
 	"ForceEnd"
 	{
 		"#format"	"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} The match was force-ended by {GREEN}{1}{NORMAL}."
+		"en"		"{GREEN}[PugSetup]{NORMAL} The match was force-ended by {GREEN}{1}{NORMAL}."
 	}
 	"Pause"
 	{
 		"#format"	"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {GREEN}{1} {NORMAL}has called for a pause."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {GREEN}{1} {NORMAL}has called for a pause."
 	}
 	"Unpause"
 	{
 		"#format"	"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {GREEN}{1} {NORMAL}has unpaused."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {GREEN}{1} {NORMAL}has unpaused."
 	}
 	"SetupBy"
 	{
 		"#format"	"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} Pug leader: {GREEN}{1}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Pug leader: {GREEN}{1}"
 	}
 	"NewLeader"
 	{
 		"#format"		"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} The new leader is {GREEN}{1}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} The new leader is {GREEN}{1}"
 	}
 	"CaptMessage"
 	{
 		"#format"		"{1:d},{2:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} Captain {1} will be {2}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Captain {1} will be {2}"
 	}
 	"TeamSetupMenuTitle"
 	{
@@ -218,21 +218,21 @@
 	"InitialPickPlayerChoice"
 	{
 		"#format"	"{1:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} has elected to get the {GREEN}first player pick."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} has elected to get the {GREEN}first player pick."
 	}
 	"InitialPickSideChoice"
 	{
 		"#format"	"{1:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} has elected to pick the {GREEN}starting sides."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} has elected to pick the {GREEN}starting sides."
 	}
 	"SideChoiceTitle"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} Which side do you want first:"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Which side do you want first:"
 	}
 	"SideChoiceSelected"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} has picked {GREEN}{2} {NORMAL}first."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} has picked {GREEN}{2} {NORMAL}first."
 	}
 	"PlayerPickTitle"
 	{
@@ -241,20 +241,20 @@
 	"PlayerPickChoice"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} has picked {2}."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} has picked {2}."
 	}
 	"SpecCantReady"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} You cannot ready up when you are on spectator."
+		"en"		"{GREEN}[PugSetup]{NORMAL} You cannot ready up when you are on spectator."
 	}
 	"RestartCounter"
 	{
 		"#format"	"{1:d}"
-		"en"		"{GREEN}[NewVision]{NORMAL} Restart {1}/3"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Restart {1}/3"
 	}
 	"Live"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} Match is {GREEN}LIVE"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Match is {GREEN}LIVE"
 	}
 	"VetoMenuTitle"
 	{
@@ -263,7 +263,7 @@
 	"PlayerVetoed"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} {NORMAL}vetoed {LIGHT_RED}{2}."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} {NORMAL}vetoed {LIGHT_RED}{2}."
 	}
 	"MapsLeft"
 	{
@@ -283,7 +283,7 @@
 	}
 	"NotLiveYet"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} The match has not begun yet."
+		"en"		"{GREEN}[PugSetup]{NORMAL} The match has not begun yet."
 	}
 	"EndMatchMenuTitle"
 	{
@@ -300,16 +300,16 @@
 	"MutualUnpauseMessage"
 	{
 		"#format"	"{1:s},{2:s},{3:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} The {1} team wants to unpause, waiting for the {2} team to type {GREEN}{3}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} The {1} team wants to unpause, waiting for the {2} team to type {GREEN}{3}"
 	}
 	"CancelCountdownMessage"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} The match has been cancelled."
+		"en"		"{GREEN}[PugSetup]{NORMAL} The match has been cancelled."
 	}
 	"Countdown"
 	{
 		"#format"	"{1:d}"
-		"en"		"{GREEN}[NewVision]{NORMAL} Countdown: {GREEN}{1} {NORMAL}seconds"
+		"en"		"{GREEN}[PugSetup]{NORMAL} Countdown: {GREEN}{1} {NORMAL}seconds"
 	}
 	"Ready"
 	{
@@ -321,7 +321,7 @@
 	}
 	"KnifeRound"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} KNIFE!"
+		"en"		"{GREEN}[PugSetup]{NORMAL} KNIFE!"
 	}
 	"KnifeRoundOption"
 	{
@@ -330,12 +330,12 @@
 	"KnifeRoundWinner"
 	{
 		"#format"	"{1:s},{2:s},{3:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} The {1} team won the knife round. Waiting for them to type {GREEN}{2} {NORMAL}or {GREEN}{3}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} The {1} team won the knife round. Waiting for them to type {GREEN}{2} {NORMAL}or {GREEN}{3}"
 	}
 	"KnifeRoundWinnerVote"
 	{
 		"#format"	"{1:s},{2:s},{3:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} The {1} team won the knife round. Waiting for them to vote by typing {GREEN}{2} {NORMAL}or {GREEN}{3}"
+		"en"		"{GREEN}[PugSetup]{NORMAL} The {1} team won the knife round. Waiting for them to vote by typing {GREEN}{2} {NORMAL}or {GREEN}{3}"
 	}
 	"TVDisabled"
 	{
@@ -434,16 +434,16 @@
 	"IsNowReady"
 	{
 		"#format"		"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} is now {GREEN}ready{NORMAL}."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} is now {GREEN}ready{NORMAL}."
 	}
 	"IsNoLongerReady"
 	{
 		"#format"		"{1:N}"
-		"en"		"{GREEN}[NewVision]{NORMAL} {1} is no longer ready."
+		"en"		"{GREEN}[PugSetup]{NORMAL} {1} is no longer ready."
 	}
 	"SavedReadyMessage"
 	{
-		"en"		"{GREEN}[NewVision]{NORMAL} Successfully saved custom ready message."
+		"en"		"{GREEN}[PugSetup]{NORMAL} Successfully saved custom ready message."
 	}
 	"PlayoutOption"
 	{
@@ -460,7 +460,7 @@
 	"ChangeMapMessage"
 	{
 		"#format"		"{1:s}"
-		"en"		"{GREEN}[NewVision]{NORMAL} Changing map to {GREEN}{1}{NORMAL}..."
+		"en"		"{GREEN}[PugSetup]{NORMAL} Changing map to {GREEN}{1}{NORMAL}..."
 	}
 	"TimeLeftInVoteHint"
 	{
