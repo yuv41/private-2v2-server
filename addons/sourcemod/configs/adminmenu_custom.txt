@@ -522,23 +522,6 @@
 				"5."		"200%"
 			}
 		}
-		"Set God"
-		{
-			"cmd"		"sm_god #1 #2"
-			
-			"1"
-			{
-				"type" 		"player"
-				"method"	"name"
-				"title"		"Player:"
-			}
-			
-			"2"
-			{
-				"type"		"onoff"
-				"title"		"God Mode:"
-			}
-		}
 		"Set Armour"
 		{
 			"cmd"		"sm_armour #1 #2"
