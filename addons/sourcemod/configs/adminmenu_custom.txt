@@ -1,0 +1,832 @@
+// Custom admin menu commands.
+// For more information:
+//
+// http://wiki.alliedmods.net/Custom_Admin_Menu_%28SourceMod%29
+//
+// Note: This file must be in Valve KeyValues format (no multiline comments)
+//
+
+//Adminmenu file for "sm_advanced_admin" plugin.
+//This file supports only "1.7.2 BETA" version officially of the plugin.
+//Update this file every update, if this needed, or you can get "Error" in your console.
+//If you can have another custom menu for admins, see instructions up there, to add this one.
+
+"Commands"
+{
+	"ServerCommands"
+	{
+		"Extend"
+		{
+			"cmd"		"sm_extend #1 #2"
+			
+			"1"
+			{
+				"type" 		"list"
+				"title"		"Extend:"
+				
+				"Map"			"0"
+				"Round"			"1"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Minute:"
+				
+				"1"			"5"
+				"2"			"10"
+				"3"			"15"
+				"4"			"20"
+				"5"			"30"
+			}
+		}
+		"Clear Map"
+		{
+			"cmd"		"sm_clearmap"
+		}
+		"Restart Game"
+		{
+			"cmd"		"sm_restartgame"
+		}
+		"Restart Round"
+		{
+			"cmd"		"sm_restartround"
+		}
+		"Show Valid Weapons"
+		{
+			"cmd"		"sm_equipments"
+		}
+		"Show Online Admins"
+		{
+			"cmd"		"sm_admins"
+		}
+	}
+	
+	"Advanced Admin"
+	{
+		"Give Weapon"
+		{
+			"cmd"		"sm_give #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Weapon:"
+				
+				
+				//PISTOLES
+				"1"			"deagle"
+				"1."		"Desert Eagle"
+				
+				"2"			"revolver"
+				"2."		"R8 Revolver"
+				
+				"3"			"tec9"
+				"3."		"Tec-9"
+				
+				"4"			"cz75a"
+				"4."		"CZ75 Auto"
+				
+				"5"			"fiveseven"
+				"5."		"Five-SeveN"
+				
+				"6"			"p250"
+				"6."		"P250"
+				
+				"7"			"elite"
+				"7."		"Dual Berettas"
+				
+				"8"			"usp_silencer"
+				"8."		"USP Silencer"
+				
+				"9"			"hkp2000"
+				"9."		"P2000"
+				
+				"10"		"glock"
+				"10."		"Glock-18"
+				
+				
+				//HEAVY WEAPONS
+				"11"		"nova"
+				"11."		"Nova"
+				
+				"12"		"xm1014"
+				"12."		"XM1014"
+				
+				"13"		"sawedoff"
+				"13."		"Sawed-Off"
+				
+				"14"		"mag7"
+				"14."		"Mag-7"
+				
+				"15"		"m249"
+				"15."		"M249"
+				
+				"16"		"negev"
+				"16."		"Negev"
+				
+				
+				//SMGS
+				"17"		"p90"
+				"17."		"P90"
+				
+				"18"		"bizon"
+				"18."		"PP-Bizon"
+				
+				"19"		"mp9"
+				"19."		"MP9"
+				
+				"20"		"mac10"
+				"20."		"MAC-10"
+				
+				"21"		"mp7"
+				"21."		"MP7"
+				
+				"22"		"mp5sd"
+				"22."		"MP5-SD"
+				
+				"23"		"ump45"
+				"23."		"UMP-45"
+				
+				
+				//RIFLES
+				"24"		"ak47"
+				"24."		"AK-47"
+				
+				"25"		"m4a1"
+				"25."		"M4A1"
+				
+				"26"		"m4a1_silencer"
+				"26."		"M4A1 Silencer"
+				
+				"27"		"famas"
+				"27."		"Famas"
+				
+				"28"		"galilar"
+				"28."		"Galil AR"
+				
+				
+				//SNIPERS
+				"29"		"awp"
+				"29."		"AWP"
+				
+				"30"		"ssg08"
+				"30."		"SSG 08"
+				
+				"31"		"scar20"
+				"31."		"SCAR-20"
+				
+				"32"		"g3sg1"
+				"32."		"G3SG1"
+				
+				"33"		"aug"
+				"33."		"AUG"
+				
+				"34"		"sg556"
+				"34."		"SG 556"
+				
+				
+				//GRENADES
+				"35"		"hegrenade"
+				"35."		"HE Grenade"
+				
+				"36"		"molotov"
+				"36."		"Molotov Cocktail"
+				
+				"37"		"incgrenade"
+				"37."		"Incendiary Grenade"
+				
+				"38"		"flashbang"
+				"38."		"Flashbang"
+				
+				"39"		"smokegrenade"
+				"39."		"Smoke Grenade"
+				
+				"40"		"tagrenade"
+				"40."		"Tactical Grenade"
+				
+				"41"		"decoy"
+				"41."		"Decoy Grenade"
+				
+				
+				//MISCS
+				"42"		"knife"
+				"42."		"Knife"
+				
+				"43"		"knifegg"
+				"43."		"GunGame Golden Knife"
+				
+				"44"		"healthshot"
+				"44."		"Health Shot"
+				
+				"45"		"taser"
+				"45."		"Zeus x27"
+				
+				"46"		"defuser"
+				"46."		"Defuser and Rescue kit"
+				
+				"47"		"c4"
+				"47."		"C4 Bomb"
+			}
+		}
+		"Equip Weapon"
+		{
+			"cmd"		"sm_equip #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Weapon:"
+				
+				
+				//PISTOLES
+				"1"			"deagle"
+				"1."		"Desert Eagle"
+				
+				"2"			"revolver"
+				"2."		"R8 Revolver"
+				
+				"3"			"tec9"
+				"3."		"Tec-9"
+				
+				"4"			"cz75a"
+				"4."		"CZ75 Auto"
+				
+				"5"			"fiveseven"
+				"5."		"Five-SeveN"
+				
+				"6"			"p250"
+				"6."		"P250"
+				
+				"7"			"elite"
+				"7."		"Dual Berettas"
+				
+				"8"			"usp_silencer"
+				"8."		"USP Silencer"
+				
+				"9"			"hkp2000"
+				"9."		"P2000"
+				
+				"10"		"glock"
+				"10."		"Glock-18"
+				
+				
+				//HEAVY WEAPONS
+				"11"		"nova"
+				"11."		"Nova"
+				
+				"12"		"xm1014"
+				"12."		"XM1014"
+				
+				"13"		"sawedoff"
+				"13."		"Sawed-Off"
+				
+				"14"		"mag7"
+				"14."		"Mag-7"
+				
+				"15"		"m249"
+				"15."		"M249"
+				
+				"16"		"negev"
+				"16."		"Negev"
+				
+				
+				//SMGS
+				"17"		"p90"
+				"17."		"P90"
+				
+				"18"		"bizon"
+				"18."		"PP-Bizon"
+				
+				"19"		"mp9"
+				"19."		"MP9"
+				
+				"20"		"mac10"
+				"20."		"MAC-10"
+				
+				"21"		"mp7"
+				"21."		"MP7"
+				
+				"22"		"mp5sd"
+				"22."		"MP5-SD"
+				
+				"23"		"ump45"
+				"23."		"UMP-45"
+				
+				
+				//RIFLES
+				"24"		"ak47"
+				"24."		"AK-47"
+				
+				"25"		"m4a1"
+				"25."		"M4A1"
+				
+				"26"		"m4a1_silencer"
+				"26."		"M4A1 Silencer"
+				
+				"27"		"famas"
+				"27."		"Famas"
+				
+				"28"		"galilar"
+				"28."		"Galil AR"
+				
+				
+				//SNIPERS
+				"29"		"awp"
+				"29."		"AWP"
+				
+				"30"		"ssg08"
+				"30."		"SSG 08"
+				
+				"31"		"scar20"
+				"31."		"SCAR-20"
+				
+				"32"		"g3sg1"
+				"32."		"G3SG1"
+				
+				"33"		"aug"
+				"33."		"AUG"
+				
+				"34"		"sg556"
+				"34."		"SG 556"
+				
+				
+				//GRENADES
+				"35"		"hegrenade"
+				"35."		"HE Grenade"
+				
+				"36"		"molotov"
+				"36."		"Molotov Cocktail"
+				
+				"37"		"incgrenade"
+				"37."		"Incendiary Grenade"
+				
+				"38"		"flashbang"
+				"38."		"Flashbang"
+				
+				"39"		"smokegrenade"
+				"39."		"Smoke Grenade"
+				
+				"40"		"tagrenade"
+				"40."		"Tactical Grenade"
+				
+				"41"		"decoy"
+				"41."		"Decoy Grenade"
+				
+				
+				//MISCS
+				"42"		"knife"
+				"42."		"Knife"
+				
+				"43"		"knifegg"
+				"43."		"GunGame Golden Knife"
+				
+				"44"		"healthshot"
+				"44."		"Health Shot"
+				
+				"45"		"taser"
+				"45."		"Zeus x27"
+				
+				"46"		"defuser"
+				"46."		"Defuser and Rescue kit"
+				
+				"47"		"c4"
+				"47."		"C4 Bomb"
+			}
+		}
+		"Melee Player"
+		{
+			"cmd"		"sm_equip #1"
+			
+			"1"
+			{
+				"type" 			"player"
+				"title"			"Player:"
+			}
+		}
+		"Disarm Player"
+		{
+			"cmd"		"sm_disarm #1"
+			
+			"1"
+			{
+				"type" 			"player"
+				"title"			"Player:"
+			}
+		}
+		
+		"Respawn"
+		{
+			"cmd"		"sm_respawn #1"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+		}
+		"Teleport to Player"
+		{
+			"cmd"		"sm_teleport #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Target 1:"
+			}
+			
+			"2"
+			{
+				"type" 		"player"
+				"title"		"Target 2:"
+			}
+		}
+		"Teleport to Saved Location"
+		{
+			"cmd"		"sm_teleport #1"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Teleport player:"
+			}
+		}
+		"Save Current Location"
+		{
+			"cmd"		"sm_saveloc"
+		}
+		
+		"Bury Player"
+		{
+			"cmd"		"sm_bury #1 #2"
+			
+			"1"
+			{
+				"type" 			"player"
+				"title"			"Player:"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Bury or unbury?"
+				
+				"1"			"0"
+				"1."		"Bury"
+				
+				"2"			"1"
+				"2."		"Unbury"
+			}
+		}
+		
+		"Set Speed"
+		{
+			"cmd"		"sm_speed #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Speed:"
+				
+				"1"			"0.5"
+				"1."		"50%"
+				
+				"2"			"0.8"
+				"2."		"80%"
+				
+				"3"			"1.0"
+				"3."		"100%"
+				
+				"4"			"1.5"
+				"4."		"150%"
+				
+				"5"			"2.0"
+				"5."		"200%"
+			}
+		}
+		"Set God"
+		{
+			"cmd"		"sm_god #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"method"	"name"
+				"title"		"Player:"
+			}
+			
+			"2"
+			{
+				"type"		"onoff"
+				"title"		"God Mode:"
+			}
+		}
+		"Set Armour"
+		{
+			"cmd"		"sm_armour #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Amount:"
+				
+				"1"			"0"
+				"2"			"25"
+				"3"			"50"
+				"4"			"75"
+				"5"			"100"
+			}
+		}
+		"Set Helmet"
+		{
+			"cmd"		"sm_helmet #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"method"	"name"
+				"title"		"Player:"
+			}
+			
+			"2"
+			{
+				"type"		"onoff"
+				"title"		"Helmet:"
+			}
+		}
+		"Set Health"
+		{
+			"cmd"		"sm_health #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Amount:"
+				
+				"1"			"1"
+				"2"			"25"
+				"3"			"50"
+				"4"			"100"
+				"5"			"150"
+				"6"			"200"
+			}
+		}
+		"Set Cash"
+		{
+			"cmd"		"sm_cash #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Amount:"
+				
+				"1"			"0"
+				"2"			"1000"
+				"3"			"2500"
+				"4"			"5000"
+				"5"			"10000"
+				"6"			"16000"
+			}
+		}
+		"Set Stats"
+		{
+			"cmd"		"sm_setstats #1 #2 #3"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Statname:"
+				
+				"1"			"kills"
+				"1."		"Kills"
+				
+				"2"			"assists"
+				"2."		"Assists"
+				
+				"3"			"deaths"
+				"3."		"Deaths"
+				
+				"4"			"mvps"
+				"4."		"MVPs"
+				
+				"5"			"scores"
+				"5."		"Scores"
+			}
+			
+			"3"
+			{
+				"type" 		"list"
+				"title"		"Amount:"
+				
+				"1"			"-1"
+				"2"			"0"
+				"3"			"5"
+				"4"			"10"
+				"5"			"100"
+			}
+		}
+		
+		"Set Team Scores"
+		{
+			"cmd"		"sm_teamscores #1 #2"
+			
+			"1"
+			{
+				"type" 		"list"
+				"title"		"Team:"
+				
+				"1"			"2"
+				"1."		"Terrorists"
+				
+				"2"			"3"
+				"2."		"Counter-Terrorists"
+			}
+			
+			"2"
+			{
+				"type" 		"list"
+				"title"		"Amount:"
+				
+				"1"			"0"
+				"2"			"5"
+				"3"			"10"
+				"4"			"15"
+				"5"			"20"
+				"6"			"25"
+			}
+		}
+		
+		"Set Team"
+		{
+			"cmd"		"sm_team #1 #2 #3"
+			
+			"1"
+			{
+				"type" 		"player"
+				"title"		"Player:"
+			}
+			"2"
+			{
+				"type"		"list"
+				"title"		"Team:"
+				
+				"1"			"1"
+				"1."		"Spectators"
+				
+				"2"			"2"
+				"2."		"Terrorists"
+				
+				"3"			"3"
+				"3."		"Counter-Terrorists"
+			}
+			"3"
+			{
+				"type"		"list"
+				"title"		"Now, or in the next round?"
+				
+				"1"			"0"
+				"1."		"Now"
+				
+				"2"			"1"
+				"2."		"Next round"
+			}
+		}
+		"Swap Player"
+		{
+			"cmd"		"sm_swap #1 #2"
+			
+			"1"
+			{
+				"type" 		"player"
+			}
+			"2"
+			{
+				"type"		"list"
+				"title"		"Now, or in the next round?"
+				
+				"1"			"0"
+				"1."		"Now"
+				
+				"2"			"1"
+				"2."		"Next round"
+			}
+		}
+		"Swap Teams"
+		{
+			"cmd"		"sm_swap @all #1"
+			
+			"1"
+			{
+				"type"		"list"
+				"title"		"Now, or in the next round?"
+				
+				"1"			"0"
+				"1."		"Now"
+				
+				"2"			"1"
+				"2."		"Next round"
+			}
+		}
+		"Scramble Teams"
+		{
+			"cmd"		"sm_scramble #1"
+		}
+		"Spawn Chicken"
+		{
+			"cmd"		"sm_spawnchicken"
+		}
+		"Spawn Custom Chicken"
+		{
+			"cmd"		"sm_spawnchicken #1 #2"
+			
+			"1"
+			{
+				"type"		"list"
+				"title"		"Body:"
+				
+				"1"			"0"
+				"1."		"Default"
+				
+				"2"			"1"
+				"2."		"Birthday"
+				
+				"3"			"2"
+				"3."		"Ghost"
+				
+				"4"			"3"
+				"4."		"Christmas"
+				
+				"5"			"4"
+				"5."		"Bunny"
+				
+				"6"			"5"
+				"6."		"Pumpkin"
+				
+				"7"			"6"
+				"7."		"Zombie"
+			}
+			"2"
+			{
+				"type"		"list"
+				"title"		"Explode Damage:"
+				
+				"1"			"-1"
+				"1."		"Invulnerable"
+				
+				"2"			"0"
+				"2."		"Normal Chicken"
+				
+				"3"			"50"
+				"3."		"50 Damage"
+				
+				"4"			"100"
+				"4."		"100 Damage"
+				
+				"5"			"500"
+				"5."		"500 Damage"
+			}
+		}
+		"Spawn Ball"
+		{
+			"cmd"		"sm_spawnball"
+		}
+	}
+}
