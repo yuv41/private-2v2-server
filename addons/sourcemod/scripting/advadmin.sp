@@ -1,5 +1,6 @@
 #pragma semicolon 1
 
+#include <multicolors>
 #include <sourcemod>
 #include <sdktools>
 #include <sdkhooks>
@@ -146,11 +147,11 @@ public OnClientAuthorized(client, const String: auth[])
 		
 		if((value == 2) && GetClientIP(client, IP, sizeof(IP)) && GeoipCountry(IP, country, sizeof(country)))
 		{
-			PrintToChatAll("%t", "Player_Connected_From", client, country);
+			CPrintToChatAll("%t", "Player_Connected_From", client, country);
 		}
 		else
 		{
-			PrintToChatAll("%t", "Player_Connected", client);
+			CPrintToChatAll("%t", "Player_Connected", client);
 		}
 	}
 }
@@ -915,11 +916,11 @@ public Action: CMD_Give(client, args)
 		{
 			if(tn_is_ml)
 			{
-				PrintToChatAll("%s%t", CMD_PREFIX, "CMD_Give", target_name, buffer);
+				CPrintToChatAll("%s%t", CMD_PREFIX, "CMD_Give", target_name, buffer);
 			}
 			else
 			{
-				PrintToChatAll("%s%t", CMD_PREFIX, "CMD_Give", "_s", target_name, buffer);
+				CPrintToChatAll("%s%t", CMD_PREFIX, "CMD_Give", "_s", target_name, buffer);
 			}
 		}
 		ReplyToCommand(client, "%t", "CMD_Invalid_Weapon");
@@ -995,11 +996,11 @@ public Action: CMD_Equip(client, args)
 		{
 			if(tn_is_ml)
 			{
-				PrintToChatAll("%s%t", CMD_PREFIX, "CMD_Equip", target_name, buffer);
+				CPrintToChatAll("%s%t", CMD_PREFIX, "CMD_Equip", target_name, buffer);
 			}
 			else
 			{
-				PrintToChatAll("%s%t", CMD_PREFIX, "CMD_Equip", "_s", target_name, buffer);
+				CPrintToChatAll("%s%t", CMD_PREFIX, "CMD_Equip", "_s", target_name, buffer);
 			}
 		}
 		ReplyToCommand(client, "%t", "CMD_Invalid_Weapon");
