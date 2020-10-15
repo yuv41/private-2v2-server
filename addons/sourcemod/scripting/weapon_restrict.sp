@@ -4,6 +4,7 @@
 #include <cstrike>
 #include <cstrike_weapons>
 #include <restrict>
+#include <multicolors>
 #pragma semicolon 1
 
 #define WARMUP
@@ -17,7 +18,7 @@
 #endif
 
 #define PLUGIN_VERSION "3.1.7"
-#define ADMINCOMMANDTAG "\x01[\x04SM\x01]\x04 "
+#define ADMINCOMMANDTAG ""
 #define MAXALIASES 8
 #define MAXWEAPONGROUPS 7
 enum GameType
