@@ -96,7 +96,7 @@ public Native_RefundMoney(Handle:hPlugin, iNumParams)
 	else
 		SetEntProp(client, Prop_Send, "m_iAccount", max);
 		
-	CPrintToChat(client, "\x01[\x04SM\x01]\x04 %T %T", "Refunded", client, amount,  weaponNames[_:id], client);
+	CPrintToChat(client, "%T %T", "Refunded", client, amount,  weaponNames[_:id], client);
 	
 	return 1;
 }

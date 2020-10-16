@@ -309,12 +309,12 @@ stock HandleMenuRestriction(client, WeaponID:id, amount, team)
 		if(team == 3 || team == 0)
 		{
 			Restrict_SetRestriction(id, CS_TEAM_CT, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", weaponNames[_:id], "ToAmount", amount, "ForCT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", weaponNames[_:id], "ToAmount", amount, "ForCT");
 		}
 		if(team == 2 || team == 0)
 		{
 			Restrict_SetRestriction(id, CS_TEAM_T, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", weaponNames[_:id], "ToAmount", amount, "ForT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", weaponNames[_:id], "ToAmount", amount, "ForT");
 		}
 	}
 	else
@@ -322,12 +322,12 @@ stock HandleMenuRestriction(client, WeaponID:id, amount, team)
 		if(team == 3 || team == 0)
 		{
 			Restrict_SetRestriction(id, CS_TEAM_CT, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", weaponNames[_:id], "ForCT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", weaponNames[_:id], "ForCT");
 		}
 		if(team == 2 || team == 0)
 		{
 			Restrict_SetRestriction(id, CS_TEAM_T, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", weaponNames[_:id], "ForT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", weaponNames[_:id], "ForT");
 		}
 	}
 }
@@ -342,11 +342,11 @@ stock HandleMenuGroupRestriction(client, WeaponType:group, amount, team)
 		}
 		if(amount != -1)
 		{
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t", "RestrictedAll");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t", "RestrictedAll");
 		}
 		else
 		{
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t", "UnrestrictedAll");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t", "UnrestrictedAll");
 		}
 		return;
 	}
@@ -355,12 +355,12 @@ stock HandleMenuGroupRestriction(client, WeaponType:group, amount, team)
 		if(team == 3 || team == 0)
 		{
 			Restrict_SetGroupRestriction(group, CS_TEAM_CT, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", g_WeaponGroupNames[_:group], "ToAmount", amount, "ForCT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", g_WeaponGroupNames[_:group], "ToAmount", amount, "ForCT");
 		}
 		if(team == 2 || team == 0)
 		{
 			Restrict_SetGroupRestriction(group, CS_TEAM_T, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", g_WeaponGroupNames[_:group], "ToAmount", amount, "ForT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t %t", "RestrictedCmd", g_WeaponGroupNames[_:group], "ToAmount", amount, "ForT");
 		}
 	}
 	else
@@ -368,12 +368,12 @@ stock HandleMenuGroupRestriction(client, WeaponType:group, amount, team)
 		if(team == 3 || team == 0)
 		{
 			Restrict_SetGroupRestriction(group, CS_TEAM_CT, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", g_WeaponGroupNames[_:group], "ForCT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", g_WeaponGroupNames[_:group], "ForCT");
 		}
 		if(team == 2 || team == 0)
 		{
 			Restrict_SetGroupRestriction(group, CS_TEAM_T, amount, true);
-			ShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", g_WeaponGroupNames[_:group], "ForT");
+			CShowActivity2(client, ADMINCOMMANDTAG, "%t %t %t", "UnrestrictedCmd", g_WeaponGroupNames[_:group], "ForT");
 		}
 	}
 }

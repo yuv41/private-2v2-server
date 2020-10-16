@@ -73,13 +73,13 @@ public Action:Perplayer_Debug(args)
 			{
 				if(lastval != perPlayer[i][x])
 				{
-					PrintToServer("Between %i and %i %s will be restricted to %i", last, x-1, weaponNames[WeaponID:i], lastval);
+					CPrintToServer("Between %i and %i %s will be restricted to %i", last, x-1, weaponNames[WeaponID:i], lastval);
 					lastval = perPlayer[i][x];
 					last = x;
 				}
 				if(x == MAXPLAYERS)
 				{
-					PrintToServer("Between %i and %i %s will be restricted to %i", last, MAXPLAYERS, weaponNames[WeaponID:i], lastval);
+					CPrintToServer("Between %i and %i %s will be restricted to %i", last, MAXPLAYERS, weaponNames[WeaponID:i], lastval);
 				}
 			}
 		}
