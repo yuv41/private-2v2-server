@@ -1,5 +1,5 @@
 // DO NOT MODIFY THIS FILE
-// 
+///
 // To customize your server, see gamemodes_server.txt.example
 
 
