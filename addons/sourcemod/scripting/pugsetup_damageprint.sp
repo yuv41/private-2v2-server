@@ -1,5 +1,6 @@
 #include <cstrike>
 #include <sourcemod>
+#include <multicolors>
 
 #include "include/pugsetup.inc"
 #include "pugsetup/generic.sp"
@@ -37,7 +38,7 @@ public void OnPluginStart() {
                                     "Whether players can type .dmg to see damage done");
   g_hMessageFormat = CreateConVar(
       "sm_pugsetup_damageprint_format",
-      "--> ({DMG_TO} dmg / {HITS_TO} hits) to ({DMG_FROM} dmg / {HITS_FROM} hits) from {NAME} ({HEALTH} HP)",
+      "{GREEN}[NewVision]{NORMAL} ({DMG_TO} dmg / {HITS_TO} hits) to ({DMG_FROM} dmg / {HITS_FROM} hits) from {NAME} ({HEALTH} HP)",
       "Format of the damage output string. Avaliable tags are in the default, color tags such as {LIGHT_RED} and {GREEN} also work.");
 
   AutoExecConfig(true, "pugsetup_damageprint", "sourcemod/pugsetup");
@@ -118,7 +119,7 @@ static void PrintDamageInfo(int client) {
         Colorize(message, sizeof(message));
       }
 
-      PrintToChat(client, message);
+      CPrintToChat(client, message);
     }
   }
 }
