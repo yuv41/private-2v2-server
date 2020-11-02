@@ -11,3 +11,5 @@ This plugin pack is made for running a moderated Wingman matches on private serv
  + The compiler will compile all the plugins to *"scripting/compiled"*
  + Now move the plugins to "*addons/sourcemod/plugins*"
  + Upload the files to your server.
+
+ [Plugin List](https://github.com/yuv41/private-2v2-server/blob/main/PLUGINLIST.md)
