@@ -7,7 +7,7 @@ This plugin pack is made for running a moderated Wingman matches on private serv
  + Download the repository.
  + Head over to "*addons/sourcemod/scripting*"
  + Select all .sp files and drag them in compiler.exe
- + <br><img src="https://shibe.host/tJHdl6p.gif" width="550" height="350">
+ + <br><img src="https://shibe.center/tJHdl6p.gif" width="550" height="350">
  + The compiler will compile all the plugins to *"scripting/compiled"*
  + Now move the plugins to "*addons/sourcemod/plugins*"
  + Upload the files to your server.
