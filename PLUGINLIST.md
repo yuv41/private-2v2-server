@@ -15,3 +15,4 @@
 + "ServerAdvertisements3" (3.1.4) by ESK0
 + "SM Chat Tag Replacer" (1.0)
 + "Weapon Restrict" (3.1.7) by Dr!fter
++ "Max Money" (1.0.1) by RedSword edited by yuv
