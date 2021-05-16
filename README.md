@@ -1,4 +1,4 @@
-# HvH 5v5 Server Plugins Pack
+# HvH 2v2 Server Plugins Pack
 <p align=center>
 This plugin pack is made for running a moderated 2v2 matches on private servers!
 
