@@ -19,6 +19,7 @@
 #define COMMAND_LENGTH 64
 #define LIVE_TIMER_INTERVAL 0.3
 
+#pragma tabsize 0
 #pragma semicolon 1
 #pragma newdecls required
 
@@ -75,6 +76,8 @@ bool g_DisplayRecordDemo = true;
 bool g_DisplayMapChange = false;
 bool g_DisplayAimWarmup = true;
 bool g_DisplayPlayout = false;
+bool g_bMaxMoney = false;
+
 
 /** Setup info **/
 int g_Leader = -1;
@@ -205,9 +208,9 @@ Handle g_hOnWarmupCfg = INVALID_HANDLE;
 
 // clang-format off
 public Plugin myinfo = {
-    name = "CS:GO PugSetup",
-    author = "splewis",
-    description = "Tools for setting up pugs/10mans",
+    name = "HvH Match Plugin [PugSetup]",
+    author = "splewis, yuv41",
+    description = "",
     version = PLUGIN_VERSION,
     url = "https://github.com/splewis/csgo-pug-setup"
 };
@@ -321,7 +324,7 @@ public void OnPluginStart() {
       "Whether clients recieve 16,000 dollars when they spawn. It's recommended you use mp_death_drop_gun 0 in your warmup config if you use this.");
 
   /** Create and exec plugin's configuration file **/
-  AutoExecConfig(true, "pugsetup", "sourcemod/pugsetup");
+  AutoExecConfig(true, "pugsetupprivate", "sourcemod/pugsetup");
 
   g_CvarVersionCvar =
       CreateConVar("sm_pugsetup_version", PLUGIN_VERSION, "Current pugsetup version",
@@ -339,7 +342,7 @@ public void OnPluginStart() {
   AddPugSetupCommand("notready", Command_NotReady, "Marks the client as not ready", Permission_All,
                      ChatAlias_WhenSetup);
   AddPugSetupCommand("setup", Command_Setup,
-                     "Starts pug setup (.ready, .capt commands become avaliable)", Permission_All);
+                     "Starts pug setup (.ready, .capt commands become avaliable)", Permission_Admin);
   AddPugSetupCommand("10man", Command_10man,
                      "Starts 10man setup (alias for .setup with 10 man/gather settings)",
                      Permission_All);
@@ -357,7 +360,7 @@ public void OnPluginStart() {
                      ChatAlias_WhenSetup);
   AddPugSetupCommand("leader", Command_Leader, "Sets the pug leader", Permission_Leader);
   AddPugSetupCommand("capt", Command_Capt, "Gives the client a menu to pick captains",
-                     Permission_Leader);
+                     Permission_Admin);
   AddPugSetupCommand("stay", Command_Stay,
                      "Elects to stay on the current team after winning a knife round",
                      Permission_All, ChatAlias_WhenSetup);
@@ -767,7 +770,7 @@ public Action Command_Setup(int client, int args) {
 
   bool allowedToSetup = DoPermissionCheck(client, "sm_setup");
   if (g_GameState == GameState_None && !allowedToSetup) {
-    PugSetup_Message(client, "%t", "NoPermission");
+    PugSetup_Message(client, "%t", "SetupAccess");
     return Plugin_Handled;
   }
 
@@ -1147,6 +1150,10 @@ public Action Command_EndGame(int client, int args) {
       Call_Finish();
 
       PugSetup_MessageToAll("%t", "ForceEnd", client);
+      if (g_bMaxMoney) {
+      ServerCommand("sm plugins unload disabled/maxmoney");
+      g_bMaxMoney = false;
+      }
       EndMatch(true);
       g_ForceEnded = true;
     } else {
@@ -1171,6 +1178,10 @@ public int MatchEndHandler(Menu menu, MenuAction action, int param1, int param2)
       Call_Finish();
 
       PugSetup_MessageToAll("%t", "ForceEnd", client);
+      if (g_bMaxMoney) {
+      ServerCommand("sm plugins unload disabled/maxmoney");
+      g_bMaxMoney = false;
+      }
       EndMatch(true);
       g_ForceEnded = true;
     }
@@ -1191,6 +1202,10 @@ public Action Command_ForceEnd(int client, int args) {
   Call_Finish();
 
   PugSetup_MessageToAll("%t", "ForceEnd", client);
+  if (g_bMaxMoney) {
+  ServerCommand("sm plugins unload disabled/maxmoney");
+  g_bMaxMoney = false;
+  }
   EndMatch(true);
   g_ForceEnded = true;
   return Plugin_Handled;
@@ -1567,6 +1582,10 @@ public Action Command_ReadyMessage(int client, int args) {
 public Action Event_MatchOver(Event event, const char[] name, bool dontBroadcast) {
   if (g_GameState == GameState_Live) {
     CreateTimer(15.0, Timer_EndMatch);
+    if (g_bMaxMoney) {
+    ServerCommand("sm plugins unload disabled/maxmoney");
+    g_bMaxMoney = false;
+    }
     ExecCfg(g_WarmupCfgCvar);
 
     char map[PLATFORM_MAX_PATH];
