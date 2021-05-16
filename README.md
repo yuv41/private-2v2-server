@@ -20,5 +20,5 @@ This plugin pack is made for running a moderated 2v2 matches on private servers!
  + Upload the folder plugins to your server plugins folder.
  + Upload the configs and other necessary files
 
- # For support you can reach me trough [https://discord.newvision.pub](discord)
+ # For support you can reach me trough (discord)[https://discord.newvision.pub]
  # [Plugin List](https://github.com/yuv41/private-2v2-server/blob/main/PLUGINLIST.md)
