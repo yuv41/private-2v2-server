@@ -28,8 +28,8 @@ public Action BeginLO3(Handle timer) {
     CreateTimer(3.0, Restart2);
   } else {
     // single restart
-    RestartGame(5);
-    CreateTimer(5.1, MatchLive);
+    RestartGame(2);
+    CreateTimer(2.1, MatchLive);
   }
 
   return Plugin_Handled;
@@ -51,8 +51,8 @@ public Action Restart3(Handle timer) {
     return Plugin_Handled;
 
   PugSetup_MessageToAll("%t", "RestartCounter", 3);
-  RestartGame(5);
-  CreateTimer(5.1, MatchLive);
+  RestartGame(1);
+  CreateTimer(1.1, MatchLive);
 
   return Plugin_Handled;
 }
@@ -62,6 +62,9 @@ public Action MatchLive(Handle timer) {
     return Plugin_Handled;
 
   ChangeState(GameState_Live);
+  if (g_bMaxMoney) {
+  ServerCommand("sm plugins load disabled/maxmoney");
+  }
   Call_StartForward(g_hOnLive);
   Call_Finish();
 
@@ -72,7 +75,7 @@ public Action MatchLive(Handle timer) {
     }
   }
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 4; i++) {
     PugSetup_MessageToAll("%t", "Live");
   }
 
